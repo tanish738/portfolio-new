@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tanish Patwa Portfolio</title>
+	<link rel="icon" type="image/x-icon" href="images/resume-7.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #f3b02a;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+	<!-- Add this in the <head> section of your HTML -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Tanish Patwa</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Work Experience</span></a></li>
+	          <li class="nav-item"><a href="#freelancing-section" class="nav-link"><span>FreeLancing</span></a></li>
+			  <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
+			  <li class="nav-item"><a href="#research-section" class="nav-link"><span>Research</span></a></li>
+			  <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#extra-section" class="nav-link"><span>Extra</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+				<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+					<div class="one-third js-halfheight order-md-last img" style="background-image: url(images/tanish.jpeg); width: 60%;  height: 600px; background-size: cover; background-position: center;">
+						<div class="overlay"></div>
+					</div>
+					<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Tanish Patwa</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+							'Software Developer',
+				  'DL Specialist ', 
+				  'Data Scientist '
+				  , 'AI Strategist ', 
+				   'ML Researcher ', 'Natural Language Processing Expert ', 
+				    'Reinforcement Learning Enthusiast ', 
+					'ML Ops Engineer ', 
+					'Generative AI Specialist '
+                ];
+
+						function playTypingAnimation(text) {
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 100); 
+						}
+
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 170);
+						}
+
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Chief Curiosity Officer</h2>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/Definition-Programmer-nbspSandy-W.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+
+								  </div>
+
+								<div class="skill-mf">
+									<br>
+									<p class="title-s">Skills</p>
+									<span>Languages & Databases: </span> 
+									<div class="">
+										C, C++, Java, Python, JavaScript, Java HTML, CSS, SQL, MySQL, NoSQL, Postgres, Firebase, 
+									</div>
+									<br>
+									<span> Frameworks & Technologies & Tools:</span>
+									<div class="">
+										Node.js, Django, Flask, FastAPI, REST APIs, Tailwind, Keras, Tensorflow, PyTorch, Pandas, Numpy, Scikit-learn, Matplotlib, Seaborn, NLTK, SpaCy, OpenCV, Git, Github, Docker, Jupyter Notebook, Google Co-laboratory, HuggingFace, LangChain, AWS, GCP , Spark.  
+									</div>
+									
+
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 id="about-heading" class="mb-4">About Me</h2>
+								
+								<p id="about-content">Hey there! I'm Tanish Patwa, your friendly neighborhood data geek on a mission to crack the code of tomorrow's tech challenges. With a Computer Science degree from Dwarkadas J Sanghvi College and an upcoming Master's in Computational Science and Engineering at Georgia Tech, I've embarked on a journey to master data, algorithms, and AI.
+
+									My path resembles navigating the gradient of a complex loss landscape—constantly tuning my skills to escape local minima and overcome saddle points.
+									 I started with a strong foundation in software engineering, data structures, and algorithms, then iteratively refined my approach to advanced AI, ML, DL, and NLP techniques. 
+									 From searching for optimal solutions in data-driven problems to crafting intelligent algorithms, 
+									I’m always climbing the gradient, driving towards smarter outcomes and deeper insights.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<!-- <span class="number" data-number="30">0</span> <span>+</span> -->
+									<!-- <span>&nbsp; Projects completed</span> -->
+								</p>
+								<!-- <p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+    <script>
+        // JavaScript code to handle scroll event
+        window.addEventListener('scroll', function() {
+            var aboutSection = document.getElementById('about-section');
+            var aboutHeading = document.getElementById('about-heading');
+			var aboutContent = document.getElementById('about-content');
+
+            // Calculate the position of the "About" section relative to the viewport
+            var aboutSectionTop = aboutSection.getBoundingClientRect().top;
+            var aboutSectionBottom = aboutSection.getBoundingClientRect().bottom;
+
+            // Check if the "About" section is fully out of view
+            if (aboutSectionBottom <= 0) {
+                // Change the heading text when scrolled past
+				aboutHeading.textContent = "Hey there! Wait a second—did I just tweak the code or catch your attention?";
+				aboutContent.textContent = "Navigating the ups and downs of tech and data is all in a day's work for me. Whether I'm fine-tuning algorithms or brainstorming the next breakthrough, I live for the thrill of problem-solving. Let's rewind, iterate, and dive deeper into the fascinating world of technology! I'm Tanish Patwa, on a mission to crack tomorrow's tech challenges. With a Computer Science degree from Dwarkadas J Sanghvi College and an upcoming Master's in Computational Science and Engineering at Georgia Tech, I'm here to turn data into insights and ideas into innovations. From training AI models to optimizing backend systems, I thrive on pushing boundaries and turning complex problems into elegant solutions.";
+            }
+        });
+    </script>
+
+	
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    	<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate"></div>
+        </div>
+		<div class="row">
+			<h1 class="big-4">Work Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date"> Infiheal, India </span>
+						<h2>AI/ML Intern </h2>
+						<span class="position"> Oct 2023 - Jan 2024 </span>
+						<!-- <p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.  -->
+							<ul>
+								<li>Engineered a data processing workflow integrating information from 10+ sources, streamlining preprocessing and reducing errors by 20%.</li>
+								<li>Integrated multiple AI APIs (OpenAI, VertexAI, Anthropic Claude), boosting conversational AI effectiveness by 17%.</li>
+								<li>Implemented an innovative "read the room" feature to analyze user text, detect emotions, and adjust the conversation flow dynamically, addressing a common issue with chatbots that overlook user intent.</li>
+								<li>Presented groundbreaking research on deploying conversational AI chatbots for mental health at the 'Two Days International Research Conference on the Role of Artificial Intelligence in Management Research' organized by Zimbabwe University.</li>
+								<li>Assisted in deploying the website using an Amazon EC2 instance, ensuring seamless integration and scalability.</li>
+								<li>Interviewed, trained, and onboarded newcomers to the existing workflow, improving team efficiency and earning recognition for exceptional contributions to the onboarding process.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Threco, India</span>
+						<h2>Full Stack Intern</h2> 
+						<br>
+						<span class="position"> Jun 2021 - Sept 2021 </span>
+						<ul>
+							<li>Created an ETL pipeline using Python and Pandas to streamline tasks, reducing manual intervention and enhancing data quality across multiple data sources.</li>
+							<li>Developed and maintained dashboards using Matplotlib, Seaborn, and Plotly, boosting system capabilities by 25% and providing detailed analysis of different types of waste to identify the most profitable materials.</li>
+							<li>Spearheaded daily stand-ups, sprint planning, and backlog prioritization, ensuring punctual delivery through agile methodologies.</li>
+							<li>Automated system report generation via data analysis, contributing to an 11% increase in profits.</li>
+							<li>Single-handedly maintained both frontend and backend systems using Django and React.js, creating more than 5 APIs, and utilizing Postman for testing and GitHub for version control. Deployed the website on Amazon EC2, ensuring scalability and seamless integration. Performed data analysis to deliver actionable insights for a recycling company.</li>
+							<li>Employed advanced ML techniques such as polynomial regression for trend analysis and spectral clustering to uncover complex data groupings, leading to more refined insights.</li>
+						</ul>
+						
+						</p>
+					</div>
+
+				</div>
+			</div>
+			</div>
+
+		<br>
+		<br>
+	</section>
+	<section class="ftco-section" id="freelancing-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h2 class="mb-4">Freelancing</h2>
+					<p>Embracing flexibility with a dash of creativity, one gig at a time.</p>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-5 d-flex ftco-animate mx-3">
+					<div class="blog-entry justify-content-end" style="width: 100%;">
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">White Turtle Studios</h3>
+							<video src="images/video.mp4" autoplay loop muted style="width: 100%; height: auto; object-fit: cover; transition: transform 0.5s ease;"></video>
+							<p>Utilized and fine-tuned AI models for voice generation, RVCs, subtitles, text-to-video using Runway, and image creation using open-source stable diffusion models, successfully producing over 200 high-quality media files. Demonstrated rapid adaptability by exploring and implementing cutting-edge models, crafting optimal prompts to enhance media output realism and quality. Collaborated closely with the creative team to seamlessly integrate AI-driven solutions, significantly boosting workflow efficiency and overall output quality. Conducted in-depth research on various AI applications, ensuring the team maintained a competitive edge in emerging technologies and trends, which informed strategic decisions in media production.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5 d-flex ftco-animate mx-3">
+					<div class="blog-entry" style="width: 100%;">
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">Statistical Fantasy Team Optimization: Powered by Django</h3>
+							<img src="images/stats.jpg" style="width: 100%; height: auto; object-fit: cover;"></img>
+							<p>Implemented a sophisticated algorithm for fantasy team selection, employing advanced techniques in probability, statistics, and custom loss functions to optimize player choices. The algorithm analyzed various combinations and permutations of player statistics to maximize team performance metrics while adhering to constraints such as budget limits and player positions. Developed a custom loss function specifically designed to minimize the difference between predicted and actual team performance, factoring in player consistency, recent form, and projected points.
+
+								Utilized Django to build a dynamic web platform that integrated the algorithm, providing an interactive interface for users to explore different team configurations and receive real-time feedback on selection quality. This streamlined the player selection process, enhanced user experience, and allowed users to make data-driven decisions with greater confidence.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="ftco-section ftco-no-pb" id="education-section">
+		<div class="container">	
+			<div class="row">
+				<h1 class="big-4">Education</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate" style="text-align: center;">
+						<span class="date"> Georgia Institute of Technology </span>
+						<h2> Master of Science in Computational Science and Engineering </h2>
+						<p><b>Courses:</b> <i> Computational Data Analysis , Modeling and Simulation , Data Visual Analytics , Large Language Models (LLM's)</i> </p>
+						<span class="position"> Aug 2024 - May 2026 (Tentative)   </span>
+					</div>
+				</div>
+
+
+    			<div class="col-md-6" style="text-align: center;">
+
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date"> Dwarkadas J Sanghvi College of Engineering (Mumbai University) </span>
+						<br>
+    					<h2> Bachelor of Technology in Computer Engineering with Honors in Intelligent Computing </h2>
+						<p><b>Courses:</b> <i> Data Structures, Advanced Algorithms, Computer Networks, Database Management, Operating System, Information Security, Software Engineering, Machine Learning, Artificial Intelligence, Big Data Analytics, Distributed Systems, Deep Learning, Signal Processing</i> </p>
+						<span class="position"> Jan 2021 - May 2024  </span>
+    				</div>
+				</div>
+    		</div>
+
+
+		</div>
+    </section>
+
+	
+
+   
+
+    <section class="ftco-section" id="research-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h2 class="mb-4">Research</h2>
+					<p>Where Questions Become Answers</p>
+				</div>
+			</div>
+			<h2 class="mb-4" style="text-align: center;">Published</h2>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="https://ijits-bg.com/sites/default/files/archive/2023%28vol.15%29/No4/contents/2023-N4-09.pdf">DR-SASV: A DEEP AND RELIABLE SPOOF AWARE SPEECH VERIFICATION SYSTEM</a></h3>
+							<h5><i>International Journal of Information Technologies and Security</i></h5>
+							<br>
+							<p>The DR-SASV system integrates a CNN-based spoof detection model with a transformer-based speech verification model to identify both impostor speakers and spoofing attacks. Trained on the ASVSpoof 2019 LA dataset, it achieves 96% accuracy in spoof detection and a 13.74% error rate in speech verification, with an overall equal error rate of 10.32%. This end-to-end solution offers robust protection against fraud.</p>
+						</div>
+					</div>
+				</div>
+		
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="https://link.springer.com/chapter/10.1007/978-981-99-7711-6_32">SMARTPHONE-BASED POTHOLE AND SPEED-BREAKER DETECTION SYSTEM</a></h3>
+							<h5><i>Part of the book series: Smart Innovation, Systems and Technologies (Springer, SIST, volume 376)</i></h5>
+							<br>
+							<p>Potholes are a significant road hazard, causing vehicle damage and endangering drivers. Traditional manual inspection methods are slow and costly. This research introduces a technical approach using accelerometer data and statistical methods like CUSUM filtering and mean value filtering for automated pothole detection. Accelerometer data, collected inexpensively, undergoes preprocessing with these methods to detect indicators such as sudden acceleration changes and vibrations associated with potholes. The algorithm is trained and tested on both secondary and primary datasets created specifically for this purpose, using labeled data to detect potholes accurately. Experimental results during training and testing on primary data show that the SVM is effective at detecting potholes with an accuracy of 93.3%.</p>
+						</div>
+					</div>
+				</div>
+		
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">Enhancing Time Series Forecasting and Uncertainity Estimation with Bayesian Neural Networks</h3>
+							<h5><i>Accepted & Awaited Publication at Journal of Computational Analysis and Applications</i></h5>
+							<br>
+							<p> Traditional models like ARIMA and SARIMA face a problem in handling complex patterns; therefore, there is a need to design more complex models such as LSTM networks and Transformers. While these models have been able to overcome quite a few limitations, they still fall short when it comes to measuring uncertainty in prediction. This is required in high stake applications like stock market forecasting. Bayesian Neural Networks assist by bringing uncertainty directly into the model to offer probabilistic predictions that enhance decision making. It is focused on the integration of BNNs into time series forecasting in the stock market and compares their performance against a great combination of traditional and modern machine learning models.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	<br>
+	<h2 class="mb-8" style="text-align: center;">In Review</h2> 
+<div class="col-md-4 d-flex ftco-animate" style="margin-left: 150px;">
+    <div class="blog-entry"> 
+        <div class="text mt-3 d-block text-center">
+            <h3 class="heading">Driving AI Security Innovation: Defending LLMs Against Intrusive Prompt Injection</h3>
+            <p>This research investigates methods to enhance the security against prompt injection LLMs attacks. It explores various ML & DL techniques for detecting and mitigating these attacks, utilizing NLP methodologies.</p>
+        </div>
+    </div>
+</div>
+    </section>
+
+
+
+	<section class="ftco-section ftco-no-pb" id="projects-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          </div>
+        </div>
+		<div class="row">
+			<h1 class="big-4">Projects</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+
+						<span class="date"><a href="https://64971f7a7290f17ccfe7959f--verdant-paprenjak-34f1fe.netlify.app/">PromptCraft 🔗</a>  </span>
+						<h2>Prompt Engineering, API Integration, ChatGPT, HTML, CSS, JS, Node.js</h2>
+						<p>Developed a website leveraging the capabilities of ChatGPT. From frontend components to backend logic built with Node.js, every aspect—including API integration—was crafted using outputs generated by ChatGPT. This innovative platform serves as an in-depth exploration of prompt engineering, showcasing its applications and methodologies in transforming natural language processing tasks.</p>
+					</div>
+
+				</div>
+				
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date"><a href="https://github.com/LP-Mini-Projects/Recipe-Community-Backend">Recipe Community  🔗</a></span>
+						<h2>Web Development, ML, NLP, Data Visualization</h2>
+						<p>Co-developed a Recipe Community platform, enhancing culinary exploration through advanced web and machine learning technologies. Built using Django and React, the platform enables users to share, search, and discover recipes with personalized recommendations. Implemented machine learning algorithms for automated ingredient-based recipe suggestions, and natural language processing (NLP) to facilitate recipe search using voice commands and text queries. Added data visualization features for users to analyze cooking trends and popular ingredients. With future integration of smart kitchen devices, the platform aims to streamline cooking experiences.</p>
+						
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date"><a href="https://github.com/djunicode/dj-grouping-Web.git">Grouping🔗</a></span>
+						<h2>Social Grouping Platform, Compatibility Matching, Django, React, ML</h2>
+						<p>Developed Grouping by Unicode, a social platform designed to connect university students by automatically forming groups based on personality and compatibility using Django, React, and machine learning. Students register with their college ID and complete a questionnaire about their interests. Clustering algorithms then form groups of 10 with shared interests, promoting inter-department collaboration and communication. The app includes group chat features, real-time sentiment monitoring, and icebreaker activities to enhance interaction, with plans for advanced analytics to measure group effectiveness and recommend personalized activities.</p>
+						
+						
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date"><a href="https://github.com/tanish738/Virtual-Teaching-Assistant-">Personalized Learning Pathway System 🔗</a></span>
+						<h2>Gemini Vertex AI, 
+							Retrieval-Augmented Generation (RAG), 
+							Natural Language Processing (NLP), 
+							Google Cloud Platform, 
+							Machine Learning</h2>
+						<p>Developed a Virtual Teaching Assistant (VTA), an AI-driven tool to personalize learning experiences by integrating Gemini Vertex AI and Retrieval-Augmented Generation (RAG). The VTA enhances traditional learning by extracting and analyzing content from uploaded PDFs using NLP techniques. Through text embedding and similarity calculations, it identifies relevant passages to answer student queries, providing more than just keyword matches. Question-answer pairs are stored in a YAML file to track learning trends and identify knowledge gaps. Using Gemini Vertex AI, the VTA generates AI-powered explanations for complex concepts, offering personalized learning paths and targeted resources to address individual needs based on students' interactions and learning patterns.</p>
+						
+						
+					</div>
+
+				</div>
+				<div class="col-md-6" style=" margin: 0 auto; float: none;"></div>
+					<div class="resume-wrap ftco-animate">
+						<span class="date">YouTube Summarization, ChatCSV, & AI Lyrics Generator, LLMs</span>
+						<h2>LangChain Agent, OpenAI API, Hugging Face, Streamlit, LLMs</h2>
+						<p>Developed a LangChain Agent utilizing OpenAI API and Hugging Face for dual applications:</p>
+						<ul>
+							<li><strong>YouTube Summarization:</strong> Created a system to summarize YouTube videos, enabling efficient content digestion using advanced natural language processing techniques.</li>
+							<li><strong>ChatCSV:</strong> Implemented an interactive chatbot for handling CSV data, allowing intuitive querying and manipulation of data files through natural language.</li>
+							<li><strong>AI-Generated Lyrics:</strong> Trained a GPT-2 model on song lyrics and developed a custom generator for creating unique lyrics based on specific prompts, demonstrating the creative potential of AI in music.</li>
+						</ul>
+						<p>These projects showcase the versatility and innovation of using LangChain Agent in diverse applications, enhancing accessibility and usability of digital content and data management.</p>
+
+						
+					</div>
+
+				</div>
+			</div>
+			
+    </section>
+
+	<section class="ftco-section" id="extra-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			 
+				<h2 class="mb-4">Extracurricular Activities</h2>
+				<p>Where Passion Meets Action</p>
+				
+			</div>
+		  </div>
+		  <h2 class="mb-4" style="text-align: center;">Positions of Responsibilites</h2> 
+		  <div class="row d-flex">
+			  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+					<div class="text mt-3 float-right d-block">
+			  
+						<h3 class="heading">ACM Marketing</h3>
+						<p>As part of the ACM marketing team, I played a key role in securing the highest funding for our flagship event, which significantly boosted its scale and impact. I successfully organized a career fair and a hackathon, attracting top companies and talented participants, enhancing the event's visibility and engagement. My efforts in sponsorship acquisition and strategic marketing not only increased funding but also strengthened industry connections, providing valuable opportunities for students to interact with professionals and showcase their skills.</p>
+			  
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+					<div class="text mt-3 float-right d-block">
+			  
+						<h3 class="heading">Help design AI curriculum </h3>
+						<br>
+						<p>Assisted in developing the AI curriculum and designing lab experiments, creating detailed lab manuals, code examples, and assignments. Crafted hands-on exercises covering topics such as neural networks, reinforcement learning, natural language processing, and computer vision, ensuring practical understanding and application of AI concepts for students.</p>
+			  
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+					<div class="text mt-3 float-right d-block">
+			  
+						<h3 class="heading">Volunteer, COVID-19 Vaccination Drive </h3>
+						<br><br>
+						<p>Assisted in organizing and supporting a successful vaccination drive in a village near Mumbai, ensuring smooth operations and community participation.</p>
+			  
+					</div>
+				</div>
+			</div>
+			
+		  </div>
+
+	  		<br>
+			  <h5 class="mb-4" style="text-align: center;">Unicode, Coding Club</h3> 
+			  <div class="row d-flex justify-content-center">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<div class="text mt-3 float-right d-block">
+				  
+							<h3 class="heading">Outhouse BE Mentor, Publicity and Events Head  2023 - 2024</h3>
+							<p>As the Outhouse BE Mentor and Publicity Events Head, I played a crucial role in managing the hackathon and multiple events, achieving the highest registration numbers to date. I actively mentored junior members and guided them through the development of impactful projects, including a VOS viewer clone and the Cisco Outhouse project. My efforts in publicity and strategic event coordination significantly enhanced our club's visibility and engagement within the community. </p>
+				  
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<div class="text mt-3 float-right d-block">
+				  
+							<h3 class="heading">Full Stack Django Mentor, 2022-2023</h3>
+							<p>Personally guided five junior developers in full-stack Django development, providing tailored instruction and mentorship to enhance their skills and understanding of the framework. Additionally, I organized and delivered a workshop on hackathon preparation and web development for 170 students, covering essential topics such as Django, HTML, and CSS. This workshop not only equipped participants with practical skills but also inspired confidence in their abilities to tackle real-world projects and excel in competitive programming environments.</p>
+				  
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<div class="text mt-3 float-right d-block">
+				  
+							<h3 class="heading">Full Stack Django Mentee, 2021-2022</h3>
+							<p> As a culmination of my learning journey, I also built a full-stack e-commerce application as my final project, integrating various features to enhance user experience and showcase my proficiency in web development. This hands-on experience allowed me to apply advanced concepts within a collaborative learning environment, further solidifying my understanding of full-stack development principles.</p>
+				  
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<h2 class="mb-4" style="text-align: center;">Achievements</h2>
+			<br>
+			<h3 class="mb-4" style="text-align: center; color: #007bff;">Ctrl+Alt+Achieve</h3>
+
+			<br>
+<div class="row d-flex justify-content-center">
+    <div class="col-md-6 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+            <div class="text mt-3 float-right d-block">
+                <h3 class="heading">Two Days International Research Conference on the Role of Artificial Intelligence in Management Research</h3>
+                <p>Attended the Two Days International Research Conference on the Role of Artificial Intelligence in Management Research, where I represented Infiheal and delivered a presentation on the impact of AI, with a specific focus on mental health chatbots. This opportunity allowed me to engage with MBA students and industry professionals, fostering valuable networking connections. My participation not only highlighted the innovative applications of AI in mental health but also enriched my understanding of the intersection between technology and management research.</p>
+            </div>
+        </div>
+    </div>
+	<br>
+    <div class="col-md-6 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+            <div class="text mt-3 float-right d-block">
+                <h3 class="heading">STTP Session at Shri Bhagubhai Mafatlal Polytechnic</h3>
+                <p>Delivered an engaging session on Generative AI and ML during a Short Term Training Programme (STTP) at Shri Bhagubhai Mafatlal Polytechnic, covering AI research trends, applications of ML, and emerging technologies.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+<h3 class="mb-4" style="text-align: center; color: #007bff;">Courses</h3>
+<div class="row d-flex justify-content-center">
+
+
+    
+
+    
+    <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+            <div class="text mt-3 float-right d-block">
+                <h3 class="heading">ML Specialization</h3>
+                <p>IBM Machine Learning [Audited].</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+            <div class="text mt-3 float-right d-block">
+				<h3 class="heading">DL Specialization</h3>
+				<p>Deep Learning Specialization DeepLearning.AI [Audited]</p>
+            </div>
+        </div>
+    </div>
+
+	<div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+            <div class="text mt-3 float-right d-block">
+            <h3 class="heading">GCP - DevOPS</h3>
+			<p><a href="https://www.cloudskillsboost.google/paths/11">GCP Devops </a></p>
+            </div>
+        </div>
+    </div>
+	<h3 class="mb-4" style="text-align: center; color: #007bff;">Beyond the Field, On the Charts</h3>
+
+	<br>
+<div class="row d-flex justify-content-center">
+<div class="col-md-6 d-flex ftco-animate">
+<div class="blog-entry justify-content-end">
+	<div class="text mt-3 float-right d-block">
+		<h3 class="heading">College Football</h3>
+		<p> Particiapted in various college level soccer competitions. </p>
+	</div>
+</div>
+</div>
+<br>
+<div class="col-md-6 d-flex ftco-animate">
+<div class="blog-entry justify-content-end">
+	<div class="text mt-3 float-right d-block">
+		<h3 class="heading">Chess Player</h3>
+		<p>Rating in Rapid Chess section at Chess.com 2000.</p>
+	</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+			
+		</div>
+	  </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+          </div>
+        </div>
+
+		<div class="row d-flex contact-info mb-5">
+
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<a href="https://www.linkedin.com/in/tanish-patwa-620256209/">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn Logo" style="width: 40px; height: auto;">
+						</a>
+					</div>
+					<h3 class="mb-4"></h3>
+					<p><a href="https://www.linkedin.com/in/tanish-patwa-620256209/">LinkedIn</a></p>
+				</div>
+			</div>
+		
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<a href="mailto:patwatanish76@gmail.com">
+							<span class="icon-paper-plane" style="font-size: 40px;"></span> <!-- Adjusted size for visibility -->
+						</a>
+					</div>
+					<h3 class="mb-4"></h3>
+					<p><a href="mailto:patwatanish76@gmail.com">Email Address</a></p>
+				</div>
+			</div>
+		
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<a href="DataScience.pdf" download>
+							<span class="icon-globe" style="font-size: 40px;"></span> <!-- Adjusted size for visibility -->
+						</a>
+					</div>
+					<h3 class="mb-4">Resume</h3>
+					<p><a href="DataScience.pdf" download>Download</a></p>
+				</div>
+			</div>
+		
+		</div>
+		
+
+		 
+   </div>
+ </section>
+
+
+ 
+	
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
